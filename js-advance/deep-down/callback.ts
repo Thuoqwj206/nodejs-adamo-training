@@ -1,13 +1,13 @@
 
 function transform(numbers: number[], callback: (num: number) => number): number[] {
-    let result: number[] = [];
+    const result: number[] = [];
     for (let i = 0; i < numbers.length; i++) {
       result[i] = callback(numbers[i]);
     }
     return result;
   }
-  
-  function double(num: number): number {
+
+  const double = (num: number): number => {
     return num * 2;
   }
   
