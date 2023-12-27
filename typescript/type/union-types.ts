@@ -8,6 +8,5 @@ resultType2 = 1;
 resultType2 = "ResultType2"
 
 const choices: string[] = ['NO', 'YES'];
-const processAnswer = (answer: number | boolean) =>
-    typeof answer === 'number' ? console.log(choices[answer]) : answer || typeof answer === 'boolean' ? console.log(choices[1]) : console.log(choices[0]);
-processAnswer(1)
+const processAnswer = (answer: number | boolean) => console.log(!!answer ? choices[1] : choices[0])
+processAnswer(0)

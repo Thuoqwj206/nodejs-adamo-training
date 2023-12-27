@@ -31,10 +31,13 @@ const _updateUser3 = (user: User, userUpdate: Readonly<User>) => {
 //--------------------------------------------------------
 
 //Record: constructs an object type whose property keys are Keys and whose property values are Type
+enum EUserName {
+    TOMMY = 'Tommy',
+    JOHN = 'John',
+    ARTHUR = 'Arthur'
+}
 
-type userName = 'Tommy' | 'John' | 'Arthur'
-
-const users: Record<userName, User> = {
+const users: Record<EUserName, User> = {
     Tommy: { name: 'Tommy Shelby', age: 32 },
     John: { name: 'John Shelby', age: 22 },
     Arthur: { name: 'Arthur Shelby', age: 42 }

@@ -33,7 +33,7 @@ const dev: Dev3 = {
     gender: 'Male'
 }
 //Type Assertions
-const multiple1 = (a: number, b: number): number => a * b;
-const result = multiple1(2, 3) as unknown as string;
-const result2 = <string><unknown>multiple1(3, 4)
+const multiple1 = (a: number, b: number): number => a * b
+const result = multiple1(2, 3) as unknown as string
+const result2 = multiple1(3, 4) as unknown as string
 console.log(result, result2)

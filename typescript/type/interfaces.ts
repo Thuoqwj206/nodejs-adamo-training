@@ -10,7 +10,7 @@ interface IPerson {
     address: string
 }
 
-const getFullName = (person: IPerson) => person.firstName + ' ' + person.lastName
+const getFullName = (person: IPerson) => `${person.firstName} ${person.lastName}`
 
 const person1: IPerson = {
     firstName: 'Tommy',
