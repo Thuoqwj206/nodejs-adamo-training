@@ -6,11 +6,13 @@
         "sourceMap": true,
         "allowJs": true,
         "moduleResolution": "node",
+        "moduleDetection": "force",
         "noImplicitReturns": true,
         "noImplicitThis": true,
         "noImplicitAny": true,
         "strictNullChecks": true,
         "suppressImplicitAnyIndexErrors": true,
-        "noUnusedLocals": true
+        "noUnusedLocals": true,
+        "noUnusedLocals": false
     }
 }
