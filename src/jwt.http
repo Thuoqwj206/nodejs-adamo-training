@@ -1,0 +1,11 @@
+POST  http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "username": "admin"
+}
+
+##
+
+GET http://localhost:5000/users
+Authorization: Beaer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWF0IjoxNzAzNzU4OTM3LCJleHAiOjE3MDM3NTg5Njd9.jhG9g2E37R3e1D2cUAFiGKih13uu-ZrQCTtrdH_5dlA

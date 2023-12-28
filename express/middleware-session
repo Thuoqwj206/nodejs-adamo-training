@@ -1,0 +1,47 @@
+import express from 'express'
+import session from 'express-session'
+import User from './module-export';
+var app = express();
+
+//This middleware is used to parse incoming requests with JSON payloads.
+app.use(express.json())
+//This middleware is used to parse incoming requests with URL-encoded payloads
+app.use(express.urlencoded({ extended: true }))
+
+declare module 'express-session' {
+    interface SessionData {
+        user: User
+    }
+}
+//configure the express-session middleware
+app.use(session(
+    {
+        secret: 'keyboard cat',
+        resave: false,
+        saveUninitialized: true,
+        cookie: {
+            secure: false,
+            httpOnly: true,
+            maxAge: 30000
+        }
+    }
+))
+
+
+app.get('/set-session', (req, res) => {
+    req.session.user = {
+        id: 1,
+        name: "Shelby",
+        gmail: "user@gmail.com"
+    };
+    res.send("OK")
+});
+app.get('/get-session', (req, res) => {
+    res.send(req.session.user)
+})
+
+
+
+app.listen(3000, () => {
+    console.log("Server is running on port 3000")
+})

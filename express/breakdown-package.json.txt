@@ -1,0 +1,31 @@
+{
+    //name: Specifies the name of the package.
+    "name" : "NodeJS Training Typescript Base"
+
+    //version: Specifies the version of the package using semantic versioning.
+    "version": "1.0.0"
+
+    //description: A short description of the package.
+    "description": "NodeJS Training Typescript Base by Johan"
+
+    //main: The entry point to the application, typically the main JavaScript file.
+    "main": "src/index.ts"
+
+    //repository: Specifies the location of the project's version control repository.
+    "repository": {
+    "type": "git",
+    "url": "https://github.com/Thuoqwj206/nodejs-adamo-training"
+    }
+
+    //dependencies: Lists the packages required for the project to run in a production environment.
+    "dependencies": {
+    "express": "^4.17.1",
+    "lodash": "^4.17.21"
+    }
+
+    //devDependencies: Lists packages required for development purposes, such as testing and build tools.
+    "devDependencies": {
+        "ts-node": "^10.9.1",
+        "typescript": "^4.8.4"
+    }
+}
