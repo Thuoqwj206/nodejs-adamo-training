@@ -12,13 +12,8 @@ const student: TStudent = {
     address: 'Birmingham'
 }
 
-<<<<<<< HEAD
 const { name: studentName, ...other1 } = student;
 console.log(studentName)
-=======
-const { name: name, ...other1 } = student;
-console.log(name)
->>>>>>> a37dc43880572342c400b9f9fd1852f5027a1c2b
 console.log(other1)
 
 const changeName = (student: TStudent, updateStudent: Partial<TStudent>) => {
