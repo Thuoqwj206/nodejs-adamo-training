@@ -7,7 +7,7 @@
         "allowJs": true,
         "moduleResolution": "node",
         "moduleDetection": "force",
-        "noImplicitReturns": true,
+        "noImplicitReturns": false,
         "noImplicitThis": true,
         "noImplicitAny": true,
         "strictNullChecks": true,
