@@ -1,0 +1,11 @@
+    npm
+=> npm is the default package manager for Node.js.
+    It is used for installing, managing, and sharing packages or libraries of JavaScript code.
+
+    npx
+=> npx is a package runner tool that comes with npm.
+    It is used to execute Node.js packages directly without installing them globally.
+    
+    nvm
+=> nvm allows you to install and manage multiple versions of Node.js on a single machine.
+    It helps switch between different Node.js versions based on project requirements.
